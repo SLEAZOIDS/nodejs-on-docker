@@ -7,4 +7,17 @@ services:
     ports:
       - "3000:3000"
     container_name: node
+    depends_on:
+      - db
     tty: true
+  db:
+    image: mysql
+    environment:
+      - MYSQL_DATABASE=sample
+      - MYSQL_ROOT_PASSWORD=password
+      - TZ=Japan
+    networks:
+      - default
+    ports:
+      - '3306:3306'
+    container_name: node_db
