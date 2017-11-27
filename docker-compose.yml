@@ -6,4 +6,5 @@ services:
       - .:/var/opt/app
     ports:
       - "3000:3000"
-    command: node server.js
+    container_name: node
+    tty: true
