@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - .:/var/opt/app
+      - /var/opt/app/ejs/node_modules
     ports:
       - "3000:3000"
     container_name: node
