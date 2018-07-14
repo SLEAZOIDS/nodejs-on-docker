@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/ts', function(req, res, next) {
+  res.render('sample', { title: 'TS' });
+});
+
 router.post('/', function(req, res, next) {
   var message = req.body.message;
   var query = 'INSERT INTO messages (text) VALUES ("' + message + '")';
