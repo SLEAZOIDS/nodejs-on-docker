@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "build": "tsc",
+    "watch": "tsc --watch"
   },
   "dependencies": {
     "@types/node": "^10.5.2",
@@ -16,6 +18,7 @@
     "morgan": "~1.9.0",
     "mysql": "^2.15.0",
     "nodemon": "^1.18.2",
+    "riot": "^3.11.1",
     "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
