@@ -5,7 +5,7 @@
     this.name = 'John';
 
     clickButton() {
-      this.opts.obs.trigger("clickButtonObs");
+      obs.trigger("clickButtonObs");
     }
   </script>
 </human>

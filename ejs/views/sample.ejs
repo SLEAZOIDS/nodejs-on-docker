@@ -10,9 +10,8 @@
     <script src="/js/human.js"></script>
     <script src="/js/pet.js"></script>
     <script>
-      riot.mount('*', {
-        obs: riot.observable()
-      });
+        var obs = riot.observable();
+        riot.mount('*');
     </script>
 </body>
 </html>
