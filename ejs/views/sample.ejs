@@ -4,11 +4,15 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <human></human>
+    <human param="John"></human>
+    <pet param="cat"></pet>
     <script src="/riot/riot.min.js"></script>
     <script src="/js/human.js"></script>
+    <script src="/js/pet.js"></script>
     <script>
-        riot.mount('human');
+      riot.mount('*', {
+        obs: riot.observable()
+      });
     </script>
 </body>
 </html>

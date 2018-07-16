@@ -1,3 +1,7 @@
-riot.tag2('human', '<h1>{name}</h1>', '', '', function(opts) {
+riot.tag2('human', '<h1>{name}</h1> <button onclick="{clickButton}">button</button>', '', '', function(opts) {
     this.name = 'John';
+
+    this.clickButton = function() {
+      this.opts.obs.trigger("clickButtonObs");
+    }.bind(this)
 });
