@@ -11,6 +11,15 @@
     <script src="/js/pet.js"></script>
     <script>
         var obs = riot.observable();
+        riot.mixin('mixin_test', {
+          init: function(opts) {
+            console.log('mixin_test')
+          },
+          log : function(v) {
+              console.log(v);
+          },
+        });
+        // riot.mixin('mixin_test');
         riot.mount('*');
     </script>
 </body>
